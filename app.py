@@ -9,7 +9,7 @@ st.set_page_config(page_title="Student Result Portal", page_icon="🎓", layout=
 EXCEL_FILE_NAME = "iaresults.xlsx" 
 
 # --- HELPER FUNCTION TO READ EXCEL ---
-@st.cache_data(ttl=3600)  # Caches data for 1 hour so the app loads instantly for students
+@st.cache_data(ttl=60)  # Caches data for 1 hour so the app loads instantly for students
 def load_data():
     if os.path.exists(EXCEL_FILE_NAME):
         try:
