@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="Student Result Portal", page_icon="🎓", layout="centered")
 
 # CHANGE THIS: Type the exact name of your Excel file present in GitHub
-EXCEL_FILE_NAME = "results.xlsx" 
+EXCEL_FILE_NAME = "iaresults.xlsx" 
 
 # --- HELPER FUNCTION TO READ EXCEL ---
 @st.cache_data(ttl=3600)  # Caches data for 1 hour so the app loads instantly for students
